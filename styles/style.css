@@ -9,16 +9,24 @@ html {
 }
 
 .page {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+  inline-size: 1200px;
+  block-size: 100%;
+>>>>>>> ac70958e1c31e2cc37239f7588ba2e1d4721856e
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+<<<<<<< HEAD
   inline-size: 1200px;
   block-size: 100%;
+=======
+>>>>>>> ac70958e1c31e2cc37239f7588ba2e1d4721856e
 }
 
 h1,
@@ -39,6 +47,7 @@ ul,
 ol {
   list-style: none;
 }
+<<<<<<< HEAD
 
 .content {
   display: flex;
@@ -327,3 +336,5 @@ fieldset {
   outline: 1px solid #fff;
   outline-offset: -1px;
 }
+=======
+>>>>>>> ac70958e1c31e2cc37239f7588ba2e1d4721856e
