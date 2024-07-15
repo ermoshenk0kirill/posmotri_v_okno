@@ -50,7 +50,6 @@ ol {
 
 .search-form {
   display: flex;
-  display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 40px;
@@ -65,7 +64,6 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  overflow: hidden;
 }
 
 .result__video {
@@ -77,8 +75,7 @@ ol {
 
 .search-form__fieldset-title {
   padding-bottom: 5px;
-
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;;
   font-weight: normal;
   font-size: 18px;
 }
@@ -91,12 +88,16 @@ ol {
   border-left: none;
   outline: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;;
   font-weight: normal;
   font-size: 18px;
   line-height: normal;
   background-color: transparent;
   appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:active {
@@ -128,7 +129,9 @@ ol {
 
 .search-form__pseudo-checkbox {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 19px;
   height: 19px;
@@ -178,7 +181,7 @@ input[type='checkbox']:active + span {
   border: 1px solid #fff;
   outline: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -220,6 +223,7 @@ input[type='checkbox']:active + span {
 .content__list {
   position: relative;
   height: 298px;
+  width: 399px;
   overflow: scroll;
 }
 
@@ -233,7 +237,7 @@ input[type='checkbox']:active + span {
 
 .title {
   padding-bottom: 21px;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 75px;
   line-height: 94%;
@@ -253,6 +257,10 @@ input[type='checkbox']:active + span {
 .content__list-item {
   z-index: 10;
   margin-bottom: 30px;
+}
+
+.content__list-item:has(.content__card-link_current) {
+  background-color: #545050;
 }
 
 .content__list-item:last-child { 
@@ -294,15 +302,21 @@ input[type='checkbox']:active + span {
   text-decoration: none;
 }
 
+
+
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 16.2px;
